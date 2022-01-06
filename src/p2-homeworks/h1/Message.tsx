@@ -3,7 +3,7 @@ import s from "./Message.module.css"
 
 
 type MessageType = {
-    avatar: any
+    avatar: string
     name: string
     message: string
     time: string
