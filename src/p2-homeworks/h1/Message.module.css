@@ -1,0 +1,68 @@
+.message {
+    display: grid;
+    grid-template-areas:
+    "a c";
+    grid-auto-columns: 1fr 20fr;
+    grid-gap: 5px;
+    background-attachment:fixed;
+
+}
+
+.avatar {
+    grid-area: a;
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    border: 2px solid green;
+    box-shadow: 0 0 7px #666;
+    align-self: end;
+    margin-left: 10px;
+}
+
+.contentBox {
+    display: grid;
+    grid-area: c;
+    grid-template-areas:
+    "p t";
+    background-color: green;
+    width: 140px;
+    box-shadow: 0 0 7px #666;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    z-index: 2;
+    margin-left: 10px;
+
+}
+
+.personalContent {
+    grid-area: p;
+    padding-bottom: 8px;
+}
+
+.name {
+    color: blue;
+}
+
+.messageText {
+    color: white;
+}
+
+.time {
+    color: grey;
+    grid-area: t;
+    align-self: end;
+    text-align: right;
+    padding-bottom: 2px;
+}
+
+#triangle {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-bottom: 65px solid green;
+    border-left: 70px solid transparent;
+    grid-area: c;
+    align-self: end;
+}
