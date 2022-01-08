@@ -1,3 +1,54 @@
 .someClass {
 
 }
+
+
+.tasksBlock {
+
+    font-weight: bold;
+    background-color: #666666;
+    border: solid 1px black;
+    width: 300px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.content {
+border-top: black solid 2px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteButton {
+    margin: 5px;
+    background-color: chocolate;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.filterButton {
+    margin: 5px;
+    border: white solid 2px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+}
+
+.redColor {
+    color: red;
+
+}
+
+.yellowColor {
+    color: yellow;
+
+}
+
+.greenColor {
+    color: green;
+
+}
