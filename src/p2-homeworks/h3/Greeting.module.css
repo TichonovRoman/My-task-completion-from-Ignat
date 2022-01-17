@@ -1,7 +1,27 @@
-.someClass {
-
+.box {
+    font-weight: bold;
+    background-color: #666666;
+    border: solid 1px black;
+    width: 300px;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #666;
+    padding-left: 10px;
 }
 
 .error {
     border: 1px solid red;
+}
+
+.errorMessage {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.button {
+    margin: 5px;
+    border: white solid 2px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
 }

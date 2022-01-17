@@ -6,6 +6,7 @@
     width: 300px;
     margin-left: 10px;
     border-radius: 5px;
+    box-shadow: 0 0 7px #666;
 }
 
 .content {
