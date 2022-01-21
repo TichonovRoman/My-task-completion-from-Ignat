@@ -3,10 +3,30 @@
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 3px solid  maroon;
+    font-weight: bold;
+    background-color: red;
+     width: 300px;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #666;
+    padding-left: 10px;
+
 }
 
 .error {
+
+
     color: red;
+}
+
+.defaultInput {
+    font-weight: bold;
+    background-color: #666666;
+    border: solid 1px black;
+    width: 300px;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #666;
+    padding-left: 10px;
 }
