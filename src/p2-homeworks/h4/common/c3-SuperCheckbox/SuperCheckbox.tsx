@@ -20,6 +20,12 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
+        if (onChangeChecked === undefined) {return}
+        else onChangeChecked(!restProps.checked)
+        if (onChange) {onChangeChecked(!restProps.checked)}
+
+        // пришлось делать заглушку, чтобы победить undefined, а то реакт ругается. Хотя undefined и так не будет
+
         // сделайте так чтоб работал onChange и onChangeChecked
     }
 
@@ -29,8 +35,9 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         <label>
             <input
                 type={'checkbox'}
-                onChange={onChangeCallback}
+                onChange={onChange || onChangeCallback}
                 className={finalInputClassName}
+
 
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
             />
