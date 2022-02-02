@@ -1,6 +1,16 @@
 .navlinks {
 
-    width: 300px;
+    width: 800px;
+    position: relative;
+    left: -290px;
+    height: 50px;
+    margin-top: 5px;
+    transition: left .4s linear;
+}
+
+
+.navlinks:hover {
+    left: 0px;
 }
 
 .navlinks a {
@@ -9,9 +19,15 @@
     text-decoration: none;
     font-size: 20px;
     border: #666666 2px solid;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
     background-color: tan;
+    margin: 10px;
 }
+
+.navlinks img {
+        width: 50px;
+}
+
 
 .navlinks a:active, a:focus {
     color: maroon;
@@ -21,3 +37,4 @@
 .navlinks a:hover {
     color: maroon;
 }
+
