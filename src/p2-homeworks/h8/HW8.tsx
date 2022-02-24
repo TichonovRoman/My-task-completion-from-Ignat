@@ -24,7 +24,7 @@ function HW8() {
     // need to fix any
     const finalPeople = people.map((p: UserType) => {
         return (
-            <tr>
+            <tr key={p._id}>
                 <td>{p._id}</td>
                 <td>{p.name}</td>
                 <td>{p.age}</td>
@@ -33,9 +33,9 @@ function HW8() {
     })
 
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sortUp'}))
-    const sortDown = () => {
-    }
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: "sortDown"}))
     const check = () => setPeople(homeWorkReducer(initialPeople, {type: "check"}))
+
     const style = {
         display: "inline-block",
         marginLeft: "5px"
