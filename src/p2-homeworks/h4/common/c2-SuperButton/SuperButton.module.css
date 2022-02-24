@@ -17,14 +17,16 @@
 
 .defaultButton:hover {
     box-shadow: 0 0 0 4px #666666;
-}
-
-.defaultButton:focus {
     background: #1d49aa;
     outline: none;
-    box-shadow: 0 0 0 4px #cbd6ee;
-
 }
+
+/*.defaultButton:focus {*/
+/*    background: #1d49aa;*/
+/*    outline: none;*/
+/*    box-shadow: 0 0 0 4px #cbd6ee;*/
+
+/*}*/
 
 .defaultButton:disabled:hover {
     background: #cbd6ee;
