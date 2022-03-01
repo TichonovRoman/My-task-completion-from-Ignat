@@ -60,6 +60,7 @@ function Clock() {
 
 
             <input
+                readOnly
                 style={{width: "445px", fontSize: "50px", marginLeft: "5px", textAlign: "center", border: "none"}}
                 value={show ? stringDate : ""}
             >
