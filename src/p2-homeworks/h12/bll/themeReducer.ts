@@ -1,14 +1,31 @@
 const initState = {
+    theme: "some"
 
 };
 
-export const themeReducer = (state = initState, action: any): any => { // fix any
+type initStateType = {
+    theme: string
+}
+
+type ActionType = {
+    type: "THEME-CHANGE",
+    payload: {
+        theme: string,
+    }
+}
+
+export const themeReducer = (state = initState, action: ActionType): initStateType => { // fix any
     switch (action.type) {
-        case "": {
-            return state;
+        case "THEME-CHANGE": {
+            return {...state, ...action.payload};
         }
         default: return state;
     }
 };
 
-export const changeThemeC = (): any => {}; // fix any
+export const changeThemeC = (theme: string): ActionType => {
+    return {type: "THEME-CHANGE",
+        payload: {
+        theme: theme,
+    }}
+}; // fix any
