@@ -4,12 +4,11 @@ import {Button, Form} from "react-bootstrap";
 import s from "./HW13.module.css"
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../h10/bll/store";
-import {checkedAC, initStateType, setResponseAC, ToggleIsDisabledButtonAC} from "./bll/hw13Reducer";
+import {checkedAC, HW13initStateType, setResponseAC, ToggleIsDisabledButtonAC} from "./bll/hw13Reducer";
 
 export const Request = () => {
 
-
-    const {response, isDisabled, isChecked} = useSelector<AppStoreType, initStateType>(store => store.hw13Reducer)
+    const {response, isDisabled, isChecked} = useSelector<AppStoreType, HW13initStateType>(store => store.hw13Reducer)
 
     const dispatch = useDispatch()
 

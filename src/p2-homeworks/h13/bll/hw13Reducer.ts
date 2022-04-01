@@ -5,7 +5,7 @@ const initState = {
 
 };
 
-export type initStateType = {
+export type HW13initStateType = {
     response: string,
     isDisabled: boolean,
     isChecked: boolean,
@@ -28,7 +28,7 @@ type CheckedActionType = {
     type: "CHECKED"
 }
 
-export const hw13Reducer = (state = initState, action: ResponseActionType | CheckedActionType | ToggleIsDisabledButtonActionType): initStateType => { // fix any
+export const hw13Reducer = (state = initState, action: ResponseActionType | CheckedActionType | ToggleIsDisabledButtonActionType): HW13initStateType => { // fix any
     switch (action.type) {
         case "SET-RESPONSE":
         case "TOGGLE-DISABLED": {
